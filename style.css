@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Mochiy+Pop+P+One");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mochiy Pop P One", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("resources/bground.jfif");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #3498db;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.additional-content {
+    margin-top: 70px; 
+    padding: 55px;
+    background: #3498db;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-group {
+    display: flex;
+    align-items: center;
+    max-width: 55%;
+}
+
+.text-section {
+    flex: 1;
+    margin-right: 20px; 
+    max-width: 50%;
+}
+
+.video-section {
+    width: 50%; 
+}
+
+.video-section iframe {
+    width: 100%;
+    height: 315px;
+}
+
+
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+}
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-section .card {
+    flex: 1;
+    width: 200px;
+    margin: 20px 20px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.content-section .card img {
+    width: 100%;
+    height: auto;
+}
+
+.content-section .card h2 {
+    margin: 15px 0px;
+    font-size: 28px;
+    color: #1662a1;
+}
+
+.content-section .card p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+    }
+}
